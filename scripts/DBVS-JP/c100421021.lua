@@ -71,7 +71,7 @@ function s.setfilter(c)
 end
 function s.target2(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.IsExistingMatchingCard(s.setfilter,tp,LOCATION_DECK,0,1,nil)
-		and Duel.GetLocationCount(tp,LOCATION_SZONE)>1 end
+		and Duel.GetLocationCount(tp,LOCATION_SZONE)>0 end
 end
 function s.activate2(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SET)
